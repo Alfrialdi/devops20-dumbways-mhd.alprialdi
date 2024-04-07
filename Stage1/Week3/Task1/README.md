@@ -35,7 +35,7 @@ Week 3 task 1
 
 2.  Deploy aplikasi wayshub-frontend (NodeJS)
 
-  Repositori: <https://github.com/dumbwaysdev/wayshub-frontend>
+    Repositori: <https://github.com/dumbwaysdev/wayshub-frontend>
 
 - Menyalin repository <https://github.com/dumbwaysdev/wayshub-frontend>
   ke server dengan cara “git clone”
