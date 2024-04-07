@@ -35,7 +35,7 @@ Week 3 task 1
 
 2.  Deploy aplikasi wayshub-frontend (NodeJS)
 
-Repositori: <https://github.com/dumbwaysdev/wayshub-frontend>
+    Repositori: <https://github.com/dumbwaysdev/wayshub-frontend>
 
 - Menyalin repository <https://github.com/dumbwaysdev/wayshub-frontend>
   ke server dengan cara “git clone”
@@ -76,12 +76,12 @@ Repositori: <https://github.com/dumbwaysdev/wayshub-frontend>
 
 1.  Python
 
-    - Membuat folder untuk menyimpan konfigurasi
+  - Membuat folder untuk menyimpan konfigurasi
 
 > <img src="./media/image9.png"
 > style="width:4.46754in;height:2.71438in" />
 
-- Membuat file index.py dan menambahkan script kedalamnya
+  - Membuat file index.py dan menambahkan script kedalamnya
 
 > <img src="./media/image10.png"
 > style="width:4.49171in;height:2.73205in" />
@@ -89,24 +89,24 @@ Repositori: <https://github.com/dumbwaysdev/wayshub-frontend>
 > <img src="./media/image11.png"
 > style="width:4.5299in;height:2.74725in" />
 
-- Menjalankan apliakasi dengan perintah python3 index.py
+  - Menjalankan apliakasi dengan perintah python3 index.py
 
 > <img src="./media/image12.png"
 > style="width:4.53282in;height:2.74501in" />
 
-- Mengakses aplikasi dengan perintah ip:5000
+  - Mengakses aplikasi dengan perintah ip:5000
 
 > <img src="./media/image13.png"
 > style="width:4.52254in;height:2.45468in" />
 
 2.  Golang
 
-    - Membuat folder untuk menyimpan konfigurasi
+  - Membuat folder untuk menyimpan konfigurasi
 
 > <img src="./media/image14.png"
 > style="width:4.57262in;height:2.78329in" />
 
-- Membuat file index.go dan manambahkan script kedalamnya
+  - Membuat file index.go dan manambahkan script kedalamnya
 
 > <img src="./media/image15.png"
 > style="width:4.58223in;height:2.8196in" />
@@ -114,7 +114,7 @@ Repositori: <https://github.com/dumbwaysdev/wayshub-frontend>
 > <img src="./media/image16.png"
 > style="width:4.58393in;height:2.78052in" />
 
-- Menjalankan aplikasi dengan perintah “go run index.go”
+  - Menjalankan aplikasi dengan perintah “go run index.go”
 
 > <img src="./media/image17.png"
 > style="width:4.56746in;height:2.77408in" />
