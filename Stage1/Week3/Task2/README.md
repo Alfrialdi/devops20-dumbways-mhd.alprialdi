@@ -75,9 +75,9 @@ Week 3 task 2
     jaringan secara seimbang agar pekerjaan dapat berjalan optimal dan
     tidak overload atau kelebihan beban pada salah satu jalur koneksi.
 
-Load balance bekerja dengan cara mendistribusikan lalu lintas kunjungan
-ke dalam beberapa server sehingga tidak ada salah satu server yang
-mengalami kelebihan beban.
+    Load balance bekerja dengan cara mendistribusikan lalu lintas kunjungan
+    ke dalam beberapa server sehingga tidak ada salah satu server yang
+    mengalami kelebihan beban.
 
 4.  Mengimplementasikan load balance dari apliaksi wayshub diatas tadi
 
@@ -142,5 +142,5 @@ mengalami kelebihan beban.
 > <img src="./media/image23.png"
 > style="width:4.42446in;height:2.48625in" />
 
- Dapat dilihat masih bisa berjalan, yang artinya load balancing
- berhasil.
+  Dapat dilihat masih bisa berjalan, yang artinya load balancing
+  berhasil.
