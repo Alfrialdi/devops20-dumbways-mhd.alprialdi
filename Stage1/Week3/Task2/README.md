@@ -142,5 +142,5 @@ mengalami kelebihan beban.
 > <img src="./media/image23.png"
 > style="width:4.42446in;height:2.48625in" />
 
-> Dapat dilihat masih bisa berjalan, yang artinya load balancing
-> berhasil.
+ Dapat dilihat masih bisa berjalan, yang artinya load balancing
+ berhasil.
