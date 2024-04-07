@@ -11,9 +11,9 @@ Week 3 task 2
 
 2.  Reverse proxy dari task week 2 day 1
 
-Disini terdapat 2 server yaitu vmware dan multipass yang sudah ada
-aplikasi wayshub dan sudah membuat index.js pada task sebelumnya di day
-1:
+    Disini terdapat 2 server yaitu vmware dan multipass yang sudah ada
+    aplikasi wayshub dan sudah membuat index.js pada task sebelumnya di day
+    1:
 
 - Pada vmware, masuk ke direktori cd /etc/nginx, kemudian buat direkrori
   baru
