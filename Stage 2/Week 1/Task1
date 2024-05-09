@@ -1,0 +1,130 @@
+**STAGE 2**
+
+Week 1 task 1
+
+1. Langkah-langkah membuat VM di BiznetGio
+
+- Membuat akun di BiznetGio lalu login
+- Klik menu Compute lalu pilih NEO Lite
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.001.jpeg)
+
+- Kemudian klik Create New lalu isi Neo Lite Service Name dan Pilih Region yang tersedia
+- Pada Neo Lite Flavor, pilih Product dan Cycle sesuai keinginan atau kebutuhan
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.002.jpeg)
+
+- Pada Operating System pilih sesuai keinginan
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.003.jpeg)
+
+- Pada bagian SSH Key, pilih create ssh key kemudian isi nama ssh key lalu create
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.004.jpeg)
+
+- Selanjutnya pada  SSH/Console username, isi ssh username yang diinginkan
+- Terakhir isi password sesuai yang di inginkan lalu klik next untuk membayar dan VM selesai dibuat.
+1. Buat suatu user baru pada VM server yang telah dibuat dan implemantasikan ssh key
+- Masuk keserver yang sudah dibuat tadi lalu buat user baru 
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.005.jpeg)
+
+- Melakukan permission pada konfiguraasi ssh agar dapat login ke user baru tadi dengan cara masuk ke direktori berikut lalu ubah pada hilangkan tanda # dan ubah pada bagian berikut menjadi PubkeyAuthentication yes dan PasswordAuthentication yes.
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.006.png)
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.007.jpeg)
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.008.jpeg)
+
+- Simpan dan lakukan reload pada service sshd
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.009.jpeg)
+
+- Melakukan login ke user baru yang telah dibuat tadi (Dengan menggunakan password)
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.010.jpeg)
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.011.jpeg)
+
+- Sekarang melakukan login dengan meng-implementasi ssh
+- Generate ssh key pada server baru tadi
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.012.jpeg)
+
+- Masuk ke direktori .ssh lalu copy private key id\_rsa
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.013.jpeg)
+
+- Keluar dari server baru, lalu buat sebuah file .pem untuk memasukkan private key yang telah di copy tadi
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.014.jpeg)
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.015.jpeg)
+
+- Login kembali ke user baru tadi dengan menggunakan file .pem yang sudah ada private key tadi
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.016.jpeg)
+
+- Login berhasil tapi masih di minta password, untuk menghilangkan password maka masuk ke direktori .ssh lalu copy public key pada id\_rsa.pub, kemudian buat file authorized\_keys lalu paste public key tadi didalam file authorized\_keys
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.017.jpeg)
+
+- Log out kemudian masuk kembali dengan ke server baru dengan menggunakan file .pem tadi 
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.018.jpeg)
+
+- Dapat dilihat login ssh dengan file .pem ke server baru berhasil tanpa menggunakan password.
+1. Deploy aplikasi Dumpflix-Frontend dengan menggunakan nodejk versi 14.x
+- Melakukan clone aplikasi yang ingin di deploy
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.019.jpeg)
+
+- Menginstall nvm
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.020.jpeg)
+
+- Exec bash, lalu install npm versi 14
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.021.jpeg)
+
+- Masuk ke direktori apliaksi yang sudah di clone tadi lalu jalankan perintah npm -I untuk menginstall npm
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.022.jpeg)
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.023.jpeg)
+
+- Jalankan aplikasi dengan perintah npm start
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.024.jpeg)
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.025.jpeg)
+
+- Buka browser lalu akses ke aplikasi dengan menggunakan ip server:3000
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.026.jpeg)
+
+1. Clone repository aplikasi tadi lalu deploy dengan menggunakan PM2
+- Menginstall pm2 global
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.027.jpeg)
+
+- Untuk mendefinisikan konfigurasi aplikasi maka gunakan perintah pm2 ecosystem
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.028.jpeg)
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.029.jpeg)
+
+- Ubah isi file ecosystem yang sudah di generate tadi, pada bagian name ubah menjadi nama aplikasi yang ingin di deploy dan pada bagian script ubah jadi perintah npm start (untuk menjalankan aplikasi)
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.030.jpeg)
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.031.jpeg)
+
+- Jalankan aplikasi dengan perintah pm2 start ecosystem.config.js
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.032.jpeg)
+
+- Buka browser dan coba akses ke server
+
+  ![](Aspose.Words.2fc9a10a-3b06-497b-a09b-8b4084e2c4f9.033.jpeg)
